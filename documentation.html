@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h2><center>Project 1 - A Replica of John Snow's Cholera Outbreak Map by Raenah Bailey</center></h2>
+    <div class="about">
+        <p>The focus of project 1 for IUPUI's H517 Visualization Design, Analysis, & Evaluation was to recreate Dr. John Snow's 
+            map of the cholera outbreak that occurred in London in 1854. In order to recreate the outbreak map, data was given
+            in order to create an online visualization. Each student utilized HTML, CSS, JavaScript, and D3.js in order to create
+            the map and addition bar charts, line charts, etc. </p>
+            
+            <p> I am a PhD student studying Applied Earth Sciences and getting a minor in Geospatial Engineering. With that being
+                said, these programming languages are ones that I use quite often to visualize data for outreach and education 
+                purposes. I also utilize R programming quite a bit. However, this project still ended up being challenging for
+                as I don't usually program this much interacitivity into my dashboards. I learned a ton, I watched a ton of YouTube
+                videos, which is one of my favorite ways to learn how to program, and I utilized resources from this course. All
+                relevant sources are cited at the end of the page. 
+
+            </p>
+             </p>
+    </div>
+
+    <h2>The Blueprint</h2>
+    <div class="process">
+        <p>Datasets used:
+        <ul>
+            <li>streets.json</li>
+            <li>pumps.csv</li>
+            <li>deathdays.csv</li>
+            <li>deaths_age_sex.csv</li>
+        </ul>
+        </p>
+        <p>
+            Despite using many of the programming languages prior to the project, I have never used D3.js to create 
+            a visualization before. However, just like with any project like this, you have to start small. If you try 
+            and start creating everything at once, it will all go to crap very quickly... The first step I took was decided
+            on the layout. How did I want everything to fit? YouTube I went!! I found a HTML CSS Grid Layout crash course and
+            started building my squares, deciding on the color scheme, and started to imagine where each visualization tool
+            was going to go. 
+            
+            The first visualization I made was the map of London with just the empty streets. I got it to the size I wanted, and 
+            I started adding the data. I started with the death data, the pump data, the brewery data, the workhouse data, and 
+            the street names data. Once I was able to add all of the data, I started thinking about how I could make the map 
+            visually better. I downloaded icons from a website called "Flaticon", changed the color, and added them to the map. 
+            So, instead of a circle representing the brewery, a beer jug the color of beer is and so on. And just to make it
+            as clear as possible, I add a legend next to the map. A final note about the map is that for the street names, you 
+            notice that they are all backwards... I do not know why they are like that or how to change them. I spent a lot of time
+            with no luck on this! In addition, I also added two checkboxes, one for sex and one for age, where if you were to 
+            check one of those boxes, you would be able to see at what age or what sex on the map someone had died and where
+            of cholera. </p>
+            <p>
+            From here, I decided to challenge myself with creating a line chart to show the number of deaths per day over 
+            the time period given. Most of the examples I had seen online were bar charts, and I thought it would be neat
+            to do something a little different. This also seemed to be a bit harder to do, especially when trying to connect
+            the points on the graph with the points on map (something I don't think I was 100% successful with). However, there 
+            is a tooltip on the line graph where if you hover over the dots you can see the data and total number of deaths per 
+            that day. 
+        </p>
+
+        <p>
+            Next, I thought it would be nice to just have the total number of deaths from cholera listed on the dashboard. This 
+            way when the user is examining the data, the whole number is there, and they can see how the data is being dissected. 
+            Furthermore, I thought another graphic would be a good addition to direct the user's eyes to the rest of the visualizations
+            on this dashboard. So, what I did was I went to Microsoft Word and I created my own image, I saved it as an svg file, and
+            I uploaded it into that grid. That way when a user reads that grid, they see "571 total deaths" and then they see the graphic
+            and think "oh how is it broken down further? let's look at these nifty graphs, tables, and maps!"
+        </p>
+
+        <p>
+            Finally, my last set of visualizations are the age and sex charts. They are all connected under the same function.
+            The top histogram represents different age groups with the number of deaths at the top of each bar/age group. The 
+            pie chart represents the number of deaths with respect to sex. Below the pie chart is a table that also shows the 
+            number of deaths with respect to sex but as a percentage. Also, if you hover over the pie chart, the histogram will
+            shift and vice versa. The goal was to make this as interactive as possible. 
+        </p>
+
+        <p>
+            I hope you enjoy! 
+        </p>
+
+    </div>
+
+    <h2>Video</h2>
+    <div class="video">
+        <li><a href="https://youtu.be/HvnIYbmO1U0">https://youtu.be/HvnIYbmO1U0</a></li>
+    </div>
+
+    <h2>References</h2>
+    <div class="references">
+        <ul>
+            <li><a href="https://d3-graph-gallery.com/graph/line_basic.html">https://d3-graph-gallery.com/graph/line_basic.html</a></li>
+            <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">https://www.w3schools.com/jsref/event_onclick.asp</a></li>
+            <li><a href="https://www.ph.ucla.edu/epi/snow/mapsbroadstreet.html">https://www.ph.ucla.edu/epi/snow/mapsbroadstreet.html</a></li>
+            <li><a href="https://www.tutorialsteacher.com/d3js/create-svg-elements-in-d3js">https://www.tutorialsteacher.com/d3js/create-svg-elements-in-d3js</a></li>
+            <li><a href="https://datawanderings.com/2019/10/28/tutorial-making-a-line-chart-in-d3-js-v-5/">https://datawanderings.com/2019/10/28/tutorial-making-a-line-chart-in-d3-js-v-5/</a></li>
+            <li><a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=75237a7d4b7547c1b3addf9ffcd380fa">https://www.arcgis.com/home/webmap/viewer.html?webmap=75237a7d4b7547c1b3addf9ffcd380fa</a></li>
+            <li><a href="https://d3-graph-gallery.com/graph/histogram_basic.html">https://d3-graph-gallery.com/graph/histogram_basic.html</a></li>
+            <li><a href="https://www.nationalgeographic.org/activity/mapping-london-epidemic/">https://www.nationalgeographic.org/activity/mapping-london-epidemic/</a></li>
+            <li><a href="https://d3-graph-gallery.com/pie.html">https://d3-graph-gallery.com/pie.html</a></li>
+            <li><a href="https://gist.github.com/jfreels/6733593">https://gist.github.com/jfreels/6733593</a> </li>
+            <li><a href="https://www.flaticon.com/free-icon/beer_931898?term=beer&page=1&position=2&origin=search&related_id=931898">https://www.flaticon.com/free-icon/beer_931898?term=beer&page=1&position=2&origin=search&related_id=931898</a> </li>
+            <li><a href="https://www.tutorialsteacher.com/d3js/create-bar-chart-using-d3js">https://www.tutorialsteacher.com/d3js/create-bar-chart-using-d3js</a>
+            <li><a href="https://wattenberger.com/blog/d3-interactive-charts">https://wattenberger.com/blog/d3-interactive-charts</a></li>
+            <li><a href="https://www.flaticon.com/free-icon/office-building_3135803?term=office&page=1&position=15&origin=search&related_id=3135803">https://www.flaticon.com/free-icon/office-building_3135803?term=office&page=1&position=15&origin=search&related_id=3135803</a></li>
+            <li><a href="https://vizartpandey.com/line-chart-how-to-show-data-on-mouseover-using-d3-js/">https://vizartpandey.com/line-chart-how-to-show-data-on-mouseover-using-d3-js/</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jV8B24rSN5o">https://www.youtube.com/watch?v=jV8B24rSN5o</a></li>
+            <li><a href="https://www.pluralsight.com/guides/create-tooltips-in-d3js">https://www.pluralsight.com/guides/create-tooltips-in-d3js</a></li>
+            <li><a href="https://www.demo2s.com/javascript/javascript-d3-js-bar-chart-scale-and-zoom-pan.html">https://www.demo2s.com/javascript/javascript-d3-js-bar-chart-scale-and-zoom-pan.html</a></li>
+            <li><a href="https://www.flaticon.com/free-icon/water-pump_3300969?term=pump&page=1&position=57&origin=search&related_id=3300969">https://www.flaticon.com/free-icon/water-pump_3300969?term=pump&page=1&position=57&origin=search&related_id=3300969</a></li>
+            <li><a href="https://gist.github.com/johnnygizmo/3d593d3bf631e102a2dbee64f62d9de4">https://gist.github.com/johnnygizmo/3d593d3bf631e102a2dbee64f62d9de4</a></li>
+            <li><a href="https://d3-legend.susielu.com/">https://d3-legend.susielu.com/</a></li>
+            <li><a href="https://vizartpandey.com/line-chart-how-to-show-data-on-mouseover-using-d3-js/">https://vizartpandey.com/line-chart-how-to-show-data-on-mouseover-using-d3-js/</a></li>
+        
+        </ul>
+    </div>
+
+</body>
+</html>
